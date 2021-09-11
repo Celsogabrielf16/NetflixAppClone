@@ -1,0 +1,42 @@
+
+
+.form-control{
+  background-color: transparent;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.form-control:focus{
+  box-shadow: none;
+}
+
+option{
+  background-color: transparent;
+  color: black;
+}
+
+.v-spacer{
+  position: relative;
+  height: 40vh;
+}
+
+.bg-netflix{
+  background-color: red;
+}
+
+.top10{
+  border-radius: 3px;
+  padding: 0px;
+  margin-right: 10px;
+  width: 30px;
+  height: 33px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 12px;
+}
+
+.top10 > span{
+  font-size: 10px;
+}

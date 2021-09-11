@@ -1,0 +1,129 @@
+<div class="container d-flex flex-column bg-preto overflow-hidden mb-6">
+
+  <div class="p-2 h-100">
+
+    <div class="row mt-2">
+
+      <div class="col-2">
+
+        <a href="#" class="btn text-light" role="button" routerLink="/">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" fill="white"/></svg>
+        </a>
+
+      </div>
+
+      <div class="col-7"></div>
+
+      <div class="col-3 d-flex justify-content-end align-items-center">
+
+        <button type="button" class="btn d-flex">
+          <img src="assets/icons/chromecast.svg" />
+        </button>
+
+        <button type="button" class="btn d-flex">
+          <img src="assets/icons/search.svg" />
+        </button>
+
+        <button type="button" class="btn d-flex">
+          <img src="assets/icons/person-fill.svg" />
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="d-flex justify-content-center">
+
+    <img [src]="filme.capa" class="w-75">
+
+  </div>
+
+  <h2 class="text-light mt-3">{{ filme.nome }}</h2>
+
+  <div class="d-flex ">
+
+    <svg class="w-10 d-flex mb-10" viewBox="0 0 24 24"><path d="M15.167 8.994h3.394l.068.023c1.56.138 2.867.987 2.867 2.73 0 .275-.046.527-.092.78.367.435.596.986.596 1.72 0 .963-.39 1.52-1.032 1.978.023.183.023.252.023.39 0 .963-.39 1.784-1.009 2.243.023.206.023.275.023.39 0 1.743-1.33 2.591-2.89 2.73L12.21 22c-2.04 0-3.05-.252-4.563-.895-.917-.39-1.353-.527-2.27-.619L4 20.371v-8.234l2.476-1.445 2.27-4.427c0-.046.085-1.552.253-4.52l.871-.389c.092-.069.275-.138.505-.184.664-.206 1.398-.252 2.132 0 1.261.436 2.064 1.537 2.408 3.258.142.829.226 1.695.26 2.564l-.008 2zm-4.42-2.246l-2.758 5.376L6 13.285v5.26c.845.113 1.44.3 2.427.72 1.37.58 2.12.735 3.773.735l4.816-.023c.742-.078.895-.3 1.015-.542.201-.4.201-.876 0-1.425.558-.184.917-.479 1.078-.883.182-.457.182-.966 0-1.528.601-.228.901-.64.901-1.238s-.202-1.038-.608-1.32c.23-.46.26-.892.094-1.294-.168-.404-.298-.627-1.043-.738l-.172-.015h-5.207l.095-2.09c.066-1.448-.009-2.875-.216-4.082-.216-1.084-.582-1.58-1.096-1.758-.259-.09-.546-.086-.876.014-.003.06-.081 1.283-.235 3.67z" fill="white"></path></svg>
+
+    <h5 class="text-success d-flex ">{{ filme.avaliacao}}% Relevante</h5>
+
+    <h5 class="text-light d-flex m-10">{{ filme.lancamento }}</h5>
+
+    <h5 class="text-light d-flex m-10">{{ filme.faixaetaria }}</h5>
+
+    <h5 class="text-light d-flex m-10">{{ filme.duracao }}</h5>
+
+  </div>
+
+  <button type="button" type="button" class="btn btn-light mt-2" role="button">
+
+  <svg class="w-11" viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z" fill="currentColor"></path></svg>
+
+          Assistir
+
+  </button>
+
+  <button type="button" type="button" class="btn btn-dark mt-2 " role="button">
+
+  <img class="w-12" src="https://img.icons8.com/pastel-glyph/64/ffffff/download--v2.png"/>
+
+          Baixar
+
+  </button>
+
+  <h4 class="text-light d-flex mt-3">{{ filme.titulodescricao }}</h4>
+
+  <h5 class="text-light d-flex">{{ filme.descricao }}</h5>
+
+  <h5 class="text-light d-flex"><span class="fw-lighter">Gêneros</span>{{ filme.categorias }}</h5>
+
+  <div class="row">
+
+  <div class="col">
+
+    <button type="button" class="btn text-light" role="button">
+
+      <svg class="w-25" viewBox="0 0 24 24"><path d="M13 11h8v2h-8v8h-2v-8H3v-2h8V3h2v8z" fill="currentColor"></path></svg>
+
+      <div>Minha lista</div>
+
+    </button>
+
+  </div>
+
+  <div class="col d-flex justify-content-center">
+
+    <button type="button" href="#" class="btn text-light " role="button">
+
+      <svg class="w-25" viewBox="0 0 24 24"><path d="M15.167 8.994h3.394l.068.023c1.56.138 2.867.987 2.867 2.73 0 .275-.046.527-.092.78.367.435.596.986.596 1.72 0 .963-.39 1.52-1.032 1.978.023.183.023.252.023.39 0 .963-.39 1.784-1.009 2.243.023.206.023.275.023.39 0 1.743-1.33 2.591-2.89 2.73L12.21 22c-2.04 0-3.05-.252-4.563-.895-.917-.39-1.353-.527-2.27-.619L4 20.371v-8.234l2.476-1.445 2.27-4.427c0-.046.085-1.552.253-4.52l.871-.389c.092-.069.275-.138.505-.184.664-.206 1.398-.252 2.132 0 1.261.436 2.064 1.537 2.408 3.258.142.829.226 1.695.26 2.564l-.008 2zm-4.42-2.246l-2.758 5.376L6 13.285v5.26c.845.113 1.44.3 2.427.72 1.37.58 2.12.735 3.773.735l4.816-.023c.742-.078.895-.3 1.015-.542.201-.4.201-.876 0-1.425.558-.184.917-.479 1.078-.883.182-.457.182-.966 0-1.528.601-.228.901-.64.901-1.238s-.202-1.038-.608-1.32c.23-.46.26-.892.094-1.294-.168-.404-.298-.627-1.043-.738l-.172-.015h-5.207l.095-2.09c.066-1.448-.009-2.875-.216-4.082-.216-1.084-.582-1.58-1.096-1.758-.259-.09-.546-.086-.876.014-.003.06-.081 1.283-.235 3.67z" fill="currentColor"></path></svg>
+
+      <div class="">Classificação</div>
+
+    </button>
+
+  </div>
+
+  <div class="col d-flex justify-content-center">
+
+    <button type="button" href="#" class="btn text-light " role="button">
+
+      <svg class="w-25" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 7c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5zm11.122 12.065c-.073.301-.122.611-.122.935 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4c-1.165 0-2.204.506-2.935 1.301l-5.488-2.927c-.23.636-.549 1.229-.943 1.764l5.488 2.927zm7.878-15.065c0-2.209-1.791-4-4-4s-4 1.791-4 4c0 .324.049.634.122.935l-5.488 2.927c.395.535.713 1.127.943 1.764l5.488-2.927c.731.795 1.77 1.301 2.935 1.301 2.209 0 4-1.791 4-4z"/></svg>
+
+      <div class="">Compartilhe</div>
+
+    </button>
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="footer mt-4"></div>
+
+<div class="fixed-bottom bg-dark">
+
+  <app-footer></app-footer>
+
+</div>

@@ -1,0 +1,91 @@
+<div class="mt-2 bg-preto">
+
+  <h3 class="text-light">Populares na Netflix</h3>
+
+  <div class=" overflow-scroll">
+
+    <div class="d-flex" style="width: 700px; height: 195px;">
+
+      <div *ngFor="let f of populares" class="card me-2 border-0" style="width: 340px; height: 150px;">
+
+        <a href="#" role="button" routerLink="/detalhesmini/{{ f.indice}}">
+
+          <img [src]="f.capa" class="card-img-top">
+
+          <div class="card-body"></div>
+
+        </a>
+
+        </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="text-light">Em alta</h3>
+
+  <div class=" overflow-scroll">
+
+    <div class="d-flex" style="width: 700px; height: 195px;">
+
+      <div *ngFor="let f of emalta" class="card me-2 border-0" style="width: 340px; height: 150px;">
+
+        <a href="#" role="button" routerLink="/detalhesmini/{{ f.indice }}">
+
+          <img [src]="f.capa" class="card-img-top">
+
+          <div class="card-body"></div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="text-light">Assistir novamente</h3>
+
+  <div class=" overflow-scroll">
+
+    <div class="d-flex" style="width:  700px; height: 195px;">
+
+      <div *ngFor="let f of assistirnovamente" class="card me-2 border-0" style="width: 340px; height: 150px;">
+
+        <a href="#" role="button" routerLink="/detalhesmini/{{ f.indice }}">
+
+          <img [src]="f.capa" class="card-img-top">
+
+          <div class="card-body"></div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="text-light">Originais Netflix</h3>
+
+  <div class=" overflow-scroll">
+
+    <div class="d-flex" style="width: 1050px; height: 290px;">
+
+      <div *ngFor="let f of originaisnetflix" class="card me-2 border-0" style="width: 340px; height: 150px;">
+
+        <a href="#" role="button" routerLink="/detalhesmini/{{ f.indice }}">
+
+          <img [src]="f.capa" class="card-img-top">
+
+          <div class="card-body"></div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

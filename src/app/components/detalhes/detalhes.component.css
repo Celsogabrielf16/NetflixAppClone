@@ -1,0 +1,37 @@
+.bg-preto{
+  background-color: black;
+}
+
+.w-10{
+  width: 4%;
+}
+
+.w-11{
+  width: 6%;
+}
+
+.w-12{
+  width: 7%;
+}
+
+.m-10{
+  margin: 0 0 0 1rem ;
+}
+
+.mb-10{
+  margin: 0 0.5rem 0.75rem 0;
+}
+
+.mb-6{
+  margin: 0 0 3rem 0;
+}
+
+.ml-6{
+  margin: 0 0 0 1rem;
+}
+
+.footer{
+  height: 3vh;
+}
+
+

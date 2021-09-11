@@ -1,0 +1,120 @@
+<div class="container capa h-70 bg-preto">
+
+  <app-topo></app-topo>
+
+</div>
+
+<div class="container bg-preto">
+
+  <app-lista></app-lista>
+
+</div>
+
+<div class="footer mt-4"></div>
+
+<div class="mx-2 rounded-top roudend-top fixed-bottom bg-detalhes">
+
+  <div class="row">
+
+    <div class="col-3 mt-1">
+
+      <img [src]="filme.capa" class=" w-120 p-2 card-img-top rounded">
+
+    </div>
+
+    <div class="col-9">
+
+      <div class="d-flex align-items-center justify-content-between">
+
+      <h2 class="d-flex text-light m-16">{{ filme.nome }}</h2>
+
+      <a routerLink="/">
+
+      <svg class="d-flex mx-2 mt-1" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"/></svg>
+
+      </a>
+
+      </div>
+
+      <div class="d-flex mt-1">
+
+        <h5 class="text-light d-flex">{{ filme.lancamento }}</h5>
+
+        <h5 class="text-light d-flex m-10">{{ filme.faixaetaria }}</h5>
+
+        <h5 class="text-light d-flex m-10">{{ filme.duracao }}</h5>
+
+      </div>
+
+      <div class="">
+
+        <h5 class="text-light d-flex">{{ filme.descricao }}</h5>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-6">
+
+      <a href="#" type="button" class="btn btn-light mx-2 " role="button">
+        <svg class="w-13" viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z" fill="currentColor"></path></svg>
+
+        Assistir
+
+      </a>
+
+    </div>
+
+    <div class="col">
+
+      <div class="row">
+
+        <div class="col text-light">
+
+          <img class="ml-20 w-15" src="https://img.icons8.com/pastel-glyph/64/ffffff/download--v2.png"/>
+
+          <p>Baixar</p>
+
+        </div>
+
+        <div class="col text-light">
+
+          <svg class="w-14 ml-20" viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z" fill="currentColor"></path></svg>
+
+          <p>Previa</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+
+      <div class="align-items-center ">
+
+        <a href="#" type="button" class="btn text-light border-top" role="button" routerLink="/detalhesfull/{{ filme.indice }}">
+
+          <svg class="w-12" viewBox="0 0 24 24"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8zm-9 6v-7h2v7h-2zm1-8.75a1.21 1.21 0 0 1-.877-.364A1.188 1.188 0 0 1 10.75 8c0-.348.123-.644.372-.886.247-.242.54-.364.878-.364.337 0 .63.122.877.364.248.242.373.538.373.886s-.124.644-.373.886A1.21 1.21 0 0 1 12 9.25z" fill="currentColor"></path></svg>
+
+          Episódios e informações
+
+          <svg class="inverter ml-7" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" fill="white"/></svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

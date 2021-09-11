@@ -1,0 +1,79 @@
+.capa{
+  background-image: url("https://www.themoviedb.org/t/p/w600_and_h900_bestv2/MPw2zpGnJjW3Tl1mZXGjYNlx5X.jpg");
+  background-position: center top;
+  background-size: 100%;
+}
+.bg-preto{
+  background-color: black;
+}
+
+.bg-detalhes{
+  background-color: #2b2b2b;
+}
+
+p{
+  font-size: 0.8rem;
+}
+
+.w-10{
+  width: 4%;
+}
+
+.w-11{
+  width: 6%;
+}
+
+.w-12{
+  width: 7%;
+}
+
+.w-13{
+  width: 15%;
+}
+
+.w-14{
+  width: 28%;
+}
+
+.w-15{
+  width: 30%;
+}
+
+.m-10{
+  margin: 0 0 0 0.75rem ;
+}
+
+.m-16{
+  margin: 0.5rem 0 0 0 ;
+}
+
+.mb-10{
+  margin: 0 0.5rem 0.75rem 0;
+}
+
+.mb-6{
+  margin: 0 0 3rem 0;
+}
+
+.ml-6{
+  margin: 0 0 0 1rem;
+}
+
+.ml-7{
+  margin: 0 0 0 7rem;
+}
+
+.ml-20{
+  margin: 0 0 0 0.4rem;
+}
+
+.w-120{
+  width: 130%;
+}
+
+.inverter{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
